@@ -1,6 +1,6 @@
-<?php 
+<?php
 
-namespace Mochaka\Shopify;
+namespace Bceyssens\Shopify;
 
 use Config;
 use Illuminate\Support\ServiceProvider;
@@ -21,7 +21,7 @@ class ShopifyServiceProvider extends ServiceProvider {
 	 */
 	public function boot()
 	{
-		$this->package('mochaka/shopify');
+		$this->package('bceyssens/shopify');
 	}
 
 	/**
@@ -34,7 +34,7 @@ class ShopifyServiceProvider extends ServiceProvider {
 		$this->app->booting(function()
 		{
 		  $loader = \Illuminate\Foundation\AliasLoader::getInstance();
-		  $loader->alias('Shopify', 'Mochaka\Shopify\Facades\Shopify');
+		  $loader->alias('Shopify', 'Bceyssens\Shopify\Facades\Shopify');
 		});
 
         $this->app['shopify'] = $this->app->share(function($app)

@@ -1,5 +1,5 @@
-<?php 
-namespace Mochaka\Shopify\Facades;
+<?php
+namespace Bceyssens\Shopify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
