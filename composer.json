@@ -1,11 +1,11 @@
 {
-    "name": "mochaka/laravel-shopify",
+    "name": "bceyssens/laravel-shopify",
     "description": "Shopify interaction for Laravel",
     "keywords": ["shopify", "laravel"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Mochaka",
+            "name": "Bceyssens",
             "email": "azza@jcaks.net"
         }
     ],
@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-0": {
-            "Mochaka\\Shopify": "src/"
+            "Bceyssens\\Shopify": "src/"
         }
     },
     "minimum-stability": "stable"
