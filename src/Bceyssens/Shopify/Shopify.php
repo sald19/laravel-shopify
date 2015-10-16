@@ -257,4 +257,27 @@
         {
             return $this->makeRequest('GET', 'orders.json', $data);
         }
+
+        /**
+         * get a list of all custom collections in shopify
+         *
+         * @return array
+         */
+        public function getCustomCollections()
+        {
+            return $this->makeRequest('GET', 'custom_collections.json');
+        }
+
+        /**
+         * create a custom collection
+         *
+         * @param  array $data
+         *
+         * @return array
+         */
+        public function createCustomCollection($data)
+        {
+            $d['custom_collection'] = (!isset($data['custom_collection'])) ? $data : $data['custom_collection'];
+            return $this->makeRequest('POST', 'custom_collections.json', $d);
+        }
     }
